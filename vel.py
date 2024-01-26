@@ -15,9 +15,15 @@ def calcular_velocidad_rotacion(latitud, longitud):
     return velocidad_rotacion
 
 
-latitud = -38.373825292521154  # Latitud 
-longitud = -69.67405073588125  # Longitud 
+latitud = 18.60646 # Latitud 
+longitud = -90.73780  # Longitud 
+
+latitud2 = 38.373825292521154 #Segunda latitud
+longitud2 = -69.67405073588125 #Segunda longitud
+
 
 velocidad_resultante = calcular_velocidad_rotacion(latitud, longitud)
+velocidad_resultante2 = calcular_velocidad_rotacion(latitud2, longitud2)
 
-print(f"La velocidad de rotación en la ubicación ({latitud}, {longitud}) es aproximadamente {velocidad_resultante:.6f} km/h.")
+print(f"La velocidad de rotación en la ubicación ({latitud}, {longitud}) es aproximadamente {velocidad_resultante:.8f} km/h.")
+print(f"La velocidad de rotación en la ubicación ({latitud2}, {longitud2}) es aproximadamente {velocidad_resultante2:.6f} km/h.")
